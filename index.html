@@ -8,9 +8,18 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-    <button>Dark Mode</button>
-  
+    <div id="divsection">
+        
+        <button onclick="changeBackgroundColor()">
+          Dark Mode
+        </button>
+        
+        <script>
+        function changeBackgroundColor() {
+           document.getElementById("divsection").style.backgroundColor = "black";
+        }
+        </script>
+     </div>
   </body>
 <script src ="main.js"></script>
 </html>
