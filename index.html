@@ -11,9 +11,10 @@
     <h1>Dark Mode and Light Mode buttons</h1>
     <div id="divsection">
         
-        <button onclick="changeBackgroundColor()">
+        <button class="Dark-mode" onclick="changeBackgroundColor()">
           Dark Mode
         </button>
+        <button class="Dark-mode-reset" onclick="window.location.reload();">Reset</button>
         
         <script>
         function changeBackgroundColor() {
@@ -23,16 +24,17 @@
         
      </div>
      <div id="divsection2">
-        <button onclick="changeBackgroundColor2()">
+        <button id="Light-mode" onclick="changeBackgroundColor2()">
         Light Mode
         </button>
+        <button id="Light-mode-reset" onclick="window.location.reload();">Reset</button>
         <script>
             function changeBackgroundColor2() {
                document.getElementById("divsection2").style.backgroundColor = "white";
             }
             </script>
      </div>
-     <button onclick="window.location.reload();">Reset</button>
+     
      <footer>Made by: Brosey27</footer>
   </body>
 <script src ="main.js"></script>
